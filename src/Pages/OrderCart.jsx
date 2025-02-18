@@ -7,21 +7,6 @@ import CustomizedDrink from '../components/CustomizedDrink';
 
 const OrderCart = () => {
 
-  // const {Card_Items} = useSelector((state) => state.Menu)
-
-//   const [selectedShippingCosts , setselectedShippingCosts] = useState(0)
-
-//   const handleShippingCharge = (event) =>{
-// setselectedShippingCosts(parseFloat(event.target.value))
-//   }
-
-//     const calculateTotal = () => {
-//       const subtotal = Card_Items.reduce((sum, item) => sum + item.price * item.quantity, 0);
-//       const shippingCost = selectedShippingCosts
-//       const tax = (subtotal + shippingCost) * 0.08;
-//       return { subtotal, shippingCost, tax, total: subtotal + shippingCost + tax };
-//     };
-
   return (
     <> 
 

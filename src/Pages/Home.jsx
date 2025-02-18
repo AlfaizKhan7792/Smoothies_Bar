@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Hero from './Hero'
 import FeaturedSmothies from './FeaturedSmoothies'
 import WhyChooseUs from './WyChooseUs'

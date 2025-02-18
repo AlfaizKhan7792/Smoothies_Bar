@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import { Minus, Plus } from "lucide-react";
 import { useDispatch, useSelector } from 'react-redux';
 import { Remove, UpdateQuantity } from '../features/Menu/MenuSlice';
@@ -9,7 +9,6 @@ const MenuList = () => {
   const {Card_Items} = useSelector((state) => state.Menu)
   const dispatch = useDispatch()
 
-  // console.log(Card_Items);
 
   const handleRemove = (id) =>{
     dispatch(Remove(id))
@@ -42,25 +41,11 @@ const MenuList = () => {
           className="flex flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 ease-in-out hover:bg-red-100 sm:flex-row sm:items-center sm:gap-4"
         >
           <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-lg">
-            {/* <Image src={item.image || "/placeholder.svg"} alt={item.name} layout="fill" className="object-cover" /> */}
             <img src={item.image} layout="fill" className='object-cover' alt="" />
           </div>
 
           <div className="flex-1 py-2">
             <h3 className="text-lg font-semibold text-gray-900">{item.name}</h3>
-
-            {/* <div className="mt-2 flex items-center gap-2">
-              <input
-                type="checkbox"
-                id={`sauce-${item.id}`}
-                checked={item.extraSauce}
-                onChange={() => toggleExtraSauce(item.id)}
-                className="h-4 w-4 rounded border-gray-300"
-              />
-              <label htmlFor={`sauce-${item.id}`} className="text-sm text-gray-600">
-                Extra Sauce
-              </label>
-            </div> */}
 
             <button onClick={() => handleRemove(item.id)} className="mt-2 text-sm text-gray-500 hover:text-red-600">
               Remove

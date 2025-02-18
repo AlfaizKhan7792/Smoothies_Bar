@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 const Navbar = () => {
 
-  const {Card_Items , isSuccess} = useSelector((state) => state.Menu)
+  const {Card_Items} = useSelector((state) => state.Menu)
 
 
  return (

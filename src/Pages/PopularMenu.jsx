@@ -5,7 +5,7 @@ import Loading from '../components/Loading';
 import { toast } from 'react-toastify';
 
 const PopularMenu = () => {
-  const { All_Cards, isLoading , Card_Items } = useSelector((state) => state.Menu)
+  const { All_Cards, isLoading } = useSelector((state) => state.Menu)
 
   const dispatch = useDispatch();
 
@@ -13,14 +13,14 @@ const PopularMenu = () => {
     dispatch(Fetch());
   }, [dispatch]);
 
+  
+  const handleaddCart = (item) => {
+    dispatch(Add(item))
+    toast.success("Item Added")
+  }
+  
   if (isLoading) {
     return <Loading />;
-  }
-
-  const handleaddCart = (item) => {
-dispatch(Add(item))
-toast.success("Item Added")
-// console.log(item);
   }
 
   return (
