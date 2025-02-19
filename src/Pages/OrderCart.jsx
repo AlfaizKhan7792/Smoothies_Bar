@@ -1,6 +1,4 @@
-import React, { useState } from 'react'
-
-import { useSelector } from 'react-redux';
+import React, { useEffect, useState } from 'react'
 import OrderSummery from '../components/OrderSummery';
 import AmountSummary from '../components/AmountSummary';
 import CustomizedDrink from '../components/CustomizedDrink';

@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 const AmountSummary = ({boosterCount}) => {
 
     const {Card_Items} = useSelector((state) => state.Menu)
+    
 
 const [selectedShippingCosts , setselectedShippingCosts] = useState(0)
 
@@ -37,12 +38,12 @@ const calculateTotal = () =>{
 {/* Shipping Start */}
               <div className=" mb-2">
               <div>
-            <label class="font-medium inline-block mb-3 text-sm uppercase">
+            <label className="font-medium inline-block mb-3 text-sm uppercase">
               Shipping
             </label>
               <select
               onClick={handleShippingCharge}
-                class="block p-2 text-gray-600 w-full text-sm">
+                className="block p-2 text-gray-600 w-full text-sm">
                 <option value={0}>
                   Upto 5 km - <span className="text-green-500">Free</span>
                 </option>
