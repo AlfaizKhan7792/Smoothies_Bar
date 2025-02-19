@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
-import { BrowserRouter as Router , Routes , Route } from 'react-router-dom'
+import { HashRouter as Router , Routes , Route } from 'react-router-dom'
 import OrderCart from './Pages/OrderCart'
 import Home from './Pages/Home'
 import PageNotFound from './Pages/PageNotFound'
