@@ -40,7 +40,7 @@ const PopularMenu = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-bold">₹{item.price}</span>
-                    <button type='click' className="hover:bg-black hover:text-white px-4 py-2 rounded bg-white border text-black" onClick={()=> handleaddCart(item)}>
+                    <button type='click' className="hover:bg-black hover:text-white duration-300 px-4 py-2 rounded bg-white border text-black" onClick={()=> handleaddCart(item)}>
                       Add
                     </button>
                   </div>

@@ -11,7 +11,7 @@ const OrderSummery = () => {
       {/* Smoothie Cards */}
       <div data-aos="fade-right" className="col-span-2">
           <span className='flex mb-8 pb-4 pt-4 border-b-2 justify-between items-center' >
-       <h1 className="text-3xl font-bold">Order Summery</h1>
+       <h1 className="text-3xl font-bold">Order Summary</h1>
        <h3>{Card_Items.length} Items</h3>
        </span>
 

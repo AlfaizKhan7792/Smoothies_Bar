@@ -42,8 +42,8 @@ Add: (state, action) => {
     return {
         ...state,
         Card_Items : state.Card_Items.map((item) => item.id === id ? {...item , quantity : item.quantity + amount } : item),
+        // localStorage.setItem("cartItems", JSON.stringify(state.Card_Items.quantity))
     }
-    // localStorage.setItem("cartItems", JSON.stringify(state.Card_Items))
     
     }
     

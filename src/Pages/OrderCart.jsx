@@ -7,6 +7,8 @@ import CustomizedDrink from '../components/CustomizedDrink';
 
 const OrderCart = () => {
 
+  const [boosterCount , setBoosterCount] = useState(0)
+
   return (
     <> 
 
@@ -22,12 +24,12 @@ const OrderCart = () => {
          <OrderSummery />
 
           {/* Amount Summary */}
-        <AmountSummary />
+        <AmountSummary boosterCount={boosterCount} />
 
         </div>
 
         {/* Customize Drink Section */}
-       <CustomizedDrink />
+       <CustomizedDrink onBoosterChange={setBoosterCount} />
       </main>
 
      

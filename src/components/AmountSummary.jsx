@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useSelector } from 'react-redux'
 
-const AmountSummary = () => {
+const AmountSummary = ({boosterCount}) => {
 
     const {Card_Items} = useSelector((state) => state.Menu)
 
@@ -13,9 +13,10 @@ const handleShippingCharge  =(event) =>{
 
 const calculateTotal = () =>{
     const subtotal = Card_Items.reduce((sum, item) => sum + item.price * item.quantity, 0)
+    const booster = boosterCount * 1
     const shippingCost = selectedShippingCosts;
     const tax = (subtotal + shippingCost) * 0.08;
-    return {subtotal , shippingCost , tax , total : subtotal + shippingCost + tax}
+    return {subtotal , booster, shippingCost , tax , total : subtotal + shippingCost + tax}
 }
 
   return (
@@ -66,6 +67,13 @@ const calculateTotal = () =>{
                 <span>${calculateTotal().subtotal.toFixed(2)}</span>
               </div>
               {/* Subtotal End */}
+
+               {/* Booter Start */}
+               <div className="flex justify-between mb-2">
+                <span>Boosters</span>
+                <span>${calculateTotal().booster.toFixed(2)}</span>
+              </div>
+              {/* Booster End */}
 
               {/* Tax Start */}
               <div className="flex justify-between mb-2">

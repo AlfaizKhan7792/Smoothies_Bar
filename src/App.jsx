@@ -23,7 +23,7 @@ const App = () => {
 
   return (
     <Router>
-    <div className="min-h-screen">
+    <div className="min-h-screen duration-300">
       <Navbar />
     <Routes>      
       <Route path='*' element={<PageNotFound />} />
