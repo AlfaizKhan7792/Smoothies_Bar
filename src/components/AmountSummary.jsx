@@ -17,7 +17,7 @@ const calculateTotal = () =>{
     const booster = boosterCount * 1
     const shippingCost = selectedShippingCosts;
     const tax = (subtotal + shippingCost) * 0.08;
-    return {subtotal , booster, shippingCost , tax , total : subtotal + shippingCost + tax}
+    return {subtotal , booster, shippingCost , tax , total : subtotal + booster + shippingCost + tax}
 }
 
   return (
