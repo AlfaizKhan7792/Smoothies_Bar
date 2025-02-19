@@ -33,7 +33,7 @@ const FeaturedSmothies = () => {
   return (
     <>
       {/* Second Section */}
-    <section data-aos="fade-up" id='featured-smoothies' className="container mx-auto px-4 py-12">
+    <section data-aos="fade-up" id='featured-smoothies' className="container mx-auto mt-10 px-4 py-12">
       <h2 className="text-3xl font-bold text-center mb-8">
         Featured Smoothies
       </h2>

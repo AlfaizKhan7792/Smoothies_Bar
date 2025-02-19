@@ -38,7 +38,7 @@ const MenuList = () => {
        <> {Card_Items.map((item) => (
         <li
           key={item.id}
-          className="flex flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 ease-in-out hover:bg-red-100 sm:flex-row sm:items-center sm:gap-4"
+          className="flex flex-col rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all duration-200 ease-in-out hover:bg-gray-200 sm:flex-row sm:items-center sm:gap-4"
         >
           <div className="relative h-24 w-24 shrink-0 overflow-hidden rounded-lg">
             <img src={item.image} layout="fill" className='object-cover' alt="" />

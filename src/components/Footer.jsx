@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "../assets/Smoothie_Logo.png"
+import { Link } from 'react-router-dom';
 
 const Footer = () => (
   <>
@@ -21,7 +22,7 @@ const Footer = () => (
           <ul className="space-y-2">
             <li><a href="/" className="text-gray-400 hover:text-white">Home</a></li>
             <li><a href="#menu" className="text-gray-400 hover:text-white">Menu</a></li>
-            <li><a href="#featured-smoothies" className="text-gray-400 hover:text-white">Featured Smoothies</a></li>
+            <li><Link to="/featuredsmoothie" className="text-gray-400 hover:text-white">Featured Smoothies</Link></li>
             <li><a href="#about" className="text-gray-400 hover:text-white">About</a></li>
           </ul>
         </div>

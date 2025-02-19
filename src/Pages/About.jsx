@@ -2,7 +2,7 @@ import React from 'react'
 import img7 from "../assets/img7.png"
 
 const About = () => (
-    <section data-aos="fade-up" className="py-16">
+    <section data-aos="fade-up" className="py-16 mt-10">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>

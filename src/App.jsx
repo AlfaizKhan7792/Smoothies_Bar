@@ -8,6 +8,9 @@ import PageNotFound from './Pages/PageNotFound'
 import { ToastContainer } from 'react-toastify'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import PopularMenu from './Pages/PopularMenu'
+import About from './Pages/About'
+import FeaturedSmothies from './Pages/FeaturedSmoothies'
 
 const App = () => {
 
@@ -28,6 +31,9 @@ const App = () => {
     <Routes>      
       <Route path='*' element={<PageNotFound />} />
       <Route path='/' element={<Home />} />
+      <Route path='/menu' element={<PopularMenu />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/featuredsmoothie' element={<FeaturedSmothies />} />
       <Route path='/ordernow' element={<OrderCart />} />
     </Routes>
       <Footer />
