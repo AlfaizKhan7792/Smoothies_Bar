@@ -80,7 +80,7 @@ export default MenuSlice.reducer
 
 export const Fetch = createAsyncThunk("FETCH/DATA", async () =>{
     try {
-        const fetchData = await fetch("http://localhost:5000/users")
+        const fetchData = await fetch("https://smoothies-bar.onrender.com/users")
         const data = await fetchData.json()
         return data
     } catch (error) {
